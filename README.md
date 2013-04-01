@@ -30,5 +30,3 @@ Check out the demo if you want to see the details, and don't hesitate to fork me
 
 ![Result](http://i.imgur.com/imUMj0e.jpg)
 
-
-
