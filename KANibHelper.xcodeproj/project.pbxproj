@@ -127,8 +127,8 @@
 			children = (
 				FA0506DC17094EED00B793CB /* ViewController.h */,
 				FA0506DD17094EED00B793CB /* ViewController.m */,
-				829B2421171D952E00153D14 /* ViewController~ipad.xib */,
 				FA0506DF17094EED00B793CB /* ViewController.xib */,
+				829B2421171D952E00153D14 /* ViewController~ipad.xib */,
 				FA0506E717094F3A00B793CB /* ViewController~iphone4.xib */,
 			);
 			name = ViewControllers;
