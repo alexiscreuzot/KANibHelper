@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Kanibhelper by kirualex</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Kanibhelper</h1>
+        <p class="header">Automatic Nib handling for 3.5 and 4 inches screens</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/kirualex/KANibHelper/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/kirualex/KANibHelper/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/kirualex/KANibHelper">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/kirualex">kirualex</a></p>
+
+
+      </header>
+      <section>
+        <h1>KANibHelper</h1>
+
+<p>Tired of autolayout and those damn constraints which lack simplicity and flexibility ? Well then this library is made for you. I believe having separate Nib files for 3.5 and 4 inches screens are the way to go if you want to ease up the layout management process and improve your app maintanability.</p>
+
+<h2>How to install</h2>
+
+<p>Simply copy :</p>
+
+<ul>
+<li>KAViewController.h</li>
+<li>KAViewController.m</li>
+</ul><p>into your project folder and import KAViewController.h</p>
+
+<p>or use cocoapod with this line :
+    pod 'KANibHelper', :git =&gt; '<a href="https://github.com/kirualex/KANibHelper.git">https://github.com/kirualex/KANibHelper.git</a>'</p>
+
+<h2>How to use</h2>
+
+<p>Just subclass <code>KAViewController</code> instead of the usual <code>UIViewController</code> in your header file, and you are ready to go !</p>
+
+<p>You can then create a separate Nib file targeting 4 inches screen just by adding the suffix '~iphone4' to your original Nib file (don't forget to specify the class of the file owner and to link the views outlets).
+Don't worry if you don't have a specific '~iphone4' Nib for every screens of your app, KAViewController will just fallback on the default Nib for your controller.
+You can also add the suffix '~iphone3_5' to your original nib for consistenc, it will work.</p>
+
+<p>Check out the demo if you want to see the details, and don't hesitate to fork me !</p>
+
+<h3>File hierarchy example</h3>
+
+<p><img src="http://i.imgur.com/siMS57M.png" alt="Files"></p>
+
+<h3>Result</h3>
+
+<p><img src="http://i.imgur.com/imUMj0e.jpg" alt="Result"></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
