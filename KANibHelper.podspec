@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
   s.description = 'KANibHelper by kirualex.'
 
   s.source_files = 'KANibHelper/*.{h,m}'
-  s.clean_paths  = 'Demo'
   s.framework    = 'Foundation', 'UIKit'
 end

@@ -6,5 +6,5 @@
 //
 
 @interface KAViewController : UIViewController
-
+@property (nonatomic) BOOL isLandscape;
 @end
