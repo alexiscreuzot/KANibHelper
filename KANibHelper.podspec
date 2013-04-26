@@ -6,7 +6,8 @@ Pod::Spec.new do |s|
   s.summary  = 'Automatic Nib management for 3.5 and 4 inches screens'
   s.homepage = 'https://github.com/kirualex/KANibHelper'
   s.author   = { 'Alexis Creuzot' => 'alexis.creuzot@gmail.com' }
-  s.source   = { :git => 'https://github.com/kirualex/KANibHelper'}
+  s.source   = { :git => 'https://github.com/kirualex/KANibHelper',
+                  :tag => '0.3'}
 
   s.description = 'KANibHelper by kirualex.'
 
