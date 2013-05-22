@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KANibHelper copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>KANibHelper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8254959A174CC752001F6D8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>825495B0174CC764001F6D8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FA0506C017094EED00B793CB</key>
 		<dict>
 			<key>primary</key>

@@ -17,5 +17,4 @@
 // limitations under the License.
 
 @interface KAViewController : UIViewController
-@property (nonatomic) BOOL isLandscape;
 @end

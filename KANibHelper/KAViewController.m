@@ -15,11 +15,18 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
+#define DEGREES_TO_RADIANS(x) (M_PI * x / 180.0)
 #import "KAViewController.h"
 
 
-@implementation KAViewController
+@implementation KAViewController{    
+    NSString *nibNameDefault;
+    NSString *nibName4inches;
+    NSString *nibName3_5inches;
+    
+    NSString *path4inches;
+    NSString *path3_5inches;
+}
 
 - (id) init
 {
@@ -27,70 +34,43 @@
     return [self initWithNibName:nibName bundle:nil];
 }
 
+- (id) initWithBundle:(NSBundle *)nibBundleOrNil
+{
+    NSString *nibName = NSStringFromClass([self class]);
+    return [self initWithNibName:nibName bundle:nibBundleOrNil];
+}
+
 - (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundleOrNil
 {
     // Check if nibName exist
     if(!nibName){
-        return [self init];
+        return [self initWithBundle:nibBundleOrNil];
     }
     
+    // Names
+    nibNameDefault = nibName;
+    nibName4inches =  [nibName stringByAppendingString:@"~iphone4"];
+    nibName3_5inches =  [nibName stringByAppendingString:@"~iphone3_5"];
+    
+    // paths
+    path4inches = [[NSBundle mainBundle] pathForResource:nibName4inches ofType:@"nib"];
+    path3_5inches = [[NSBundle mainBundle] pathForResource:nibName3_5inches ofType:@"nib"];
+    
+    return [super initWithNibName:[self detectNibToUse:nibNameDefault] bundle:nibBundleOrNil];
+}
+
+- (NSString*) detectNibToUse:(NSString*) nibName
+{
     // Get screen bounds
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     
-    // Names
-    NSString *nibName4inches =  [nibName stringByAppendingString:@"~iphone4"];
-    NSString *nibName4inchesLand =  [nibName4inches stringByAppendingString:@"_land"];
-    NSString *nibName3_5inches =  [nibName stringByAppendingString:@"~iphone3_5"];
-    NSString *nibName3_5inchesLand =  [nibName3_5inches stringByAppendingString:@"_land"];
-    NSString *nibName3_5inchesLandBis =  [nibName stringByAppendingString:@"_land"];
-    
-    // paths
-    NSString *path4inches = [[NSBundle mainBundle] pathForResource:nibName4inches ofType:@"nib"];
-    NSString *path4inchesLand = [[NSBundle mainBundle] pathForResource:nibName4inchesLand ofType:@"nib"];
-    NSString *path3_5inches = [[NSBundle mainBundle] pathForResource:nibName3_5inches ofType:@"nib"];
-    NSString *path3_5inchesLand = [[NSBundle mainBundle] pathForResource:nibName3_5inchesLand ofType:@"nib"];
-    NSString *path3_5inchesLandBis = [[NSBundle mainBundle] pathForResource:nibName3_5inchesLandBis ofType:@"nib"];
-    
-    // Detect orientation change
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(orientationChanged:)
-                                                 name:UIDeviceOrientationDidChangeNotification
-                                               object:nil];
-
-    
-    if(self.isLandscape){
-        if(screenBounds.size.height == 568 && path4inchesLand){
-            return  [super initWithNibName:nibName4inchesLand bundle:nibBundleOrNil];
-        }else if(screenBounds.size.height == 480){
-            if(path3_5inchesLand){
-                return [super initWithNibName:nibName3_5inchesLand bundle:nibBundleOrNil];
-            }else if(path3_5inchesLandBis){
-                return [super initWithNibName:nibName3_5inchesLandBis bundle:nibBundleOrNil];
-            }
-        }
-    }
-    
     // Fallback if no landscape
     if(screenBounds.size.height == 568 && path4inches){
-        return [super initWithNibName:nibName4inches bundle:nibBundleOrNil];
+        return nibName4inches;
     }else if(screenBounds.size.height == 480 && path3_5inches){
-        return [super initWithNibName:nibName3_5inches bundle:nibBundleOrNil];
+        return nibName3_5inches;
     }else{
-        return [super initWithNibName:nibName bundle:nibBundleOrNil];
-    }    
-}
-
-- (void)orientationChanged:(NSNotification *)notification
-{
-    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-    if (UIDeviceOrientationIsLandscape(deviceOrientation) && !self.isLandscape){
-        KAViewController * controller = [[self class] alloc];
-        controller.isLandscape = YES;
-        controller = [controller init];
-        [self presentViewController:controller animated:NO completion:nil];
-    }else if (UIDeviceOrientationIsPortrait(deviceOrientation) && self.isLandscape){
-        [self dismissViewControllerAnimated:NO completion:nil];
+        return nibName;
     }
 }
 

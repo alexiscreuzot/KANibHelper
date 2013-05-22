@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		829B2422171D952E00153D14 /* ViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829B2421171D952E00153D14 /* ViewController~ipad.xib */; };
-		82A31D9C171E8D3700518979 /* ViewController~iphone3_5_land.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A31D9B171E8D3700518979 /* ViewController~iphone3_5_land.xib */; };
+		82549597174CC658001F6D8C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82549596174CC658001F6D8C /* ViewController.xib */; };
+		825495C6174CC7AB001F6D8C /* ViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825495C5174CC7AB001F6D8C /* ViewController~ipad.xib */; };
+		825495C8174CC844001F6D8C /* ViewController~iphone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825495C7174CC844001F6D8C /* ViewController~iphone4.xib */; };
 		FA0506C517094EED00B793CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0506C417094EED00B793CB /* UIKit.framework */; };
 		FA0506C717094EED00B793CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0506C617094EED00B793CB /* Foundation.framework */; };
 		FA0506C917094EED00B793CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0506C817094EED00B793CB /* CoreGraphics.framework */; };
@@ -19,14 +20,15 @@
 		FA0506D917094EED00B793CB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0506D817094EED00B793CB /* Default@2x.png */; };
 		FA0506DB17094EED00B793CB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0506DA17094EED00B793CB /* Default-568h@2x.png */; };
 		FA0506DE17094EED00B793CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0506DD17094EED00B793CB /* ViewController.m */; };
-		FA0506E117094EED00B793CB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0506DF17094EED00B793CB /* ViewController.xib */; };
-		FA0506E817094F3A00B793CB /* ViewController~iphone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0506E717094F3A00B793CB /* ViewController~iphone4.xib */; };
 		FA0506ED17094FAD00B793CB /* KAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0506EC17094FAD00B793CB /* KAViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		829B2421171D952E00153D14 /* ViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~ipad.xib"; sourceTree = "<group>"; };
-		82A31D9B171E8D3700518979 /* ViewController~iphone3_5_land.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~iphone3_5_land.xib"; sourceTree = "<group>"; };
+		82549596174CC658001F6D8C /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		825495AF174CC752001F6D8C /* KANibHelper copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KANibHelper copy-Info.plist"; path = "/Users/alexiscreuzot/Documents/ios_projects/frameworks/KANibHelper/KANibHelper copy-Info.plist"; sourceTree = "<absolute>"; };
+		825495C4174CC764001F6D8C /* KANibHelper copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KANibHelper copy2-Info.plist"; path = "/Users/alexiscreuzot/Documents/ios_projects/frameworks/KANibHelper/KANibHelper copy2-Info.plist"; sourceTree = "<absolute>"; };
+		825495C5174CC7AB001F6D8C /* ViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~ipad.xib"; sourceTree = "<group>"; };
+		825495C7174CC844001F6D8C /* ViewController~iphone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~iphone4.xib"; sourceTree = "<group>"; };
 		FA0506C117094EED00B793CB /* KANibHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KANibHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0506C417094EED00B793CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA0506C617094EED00B793CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,8 +44,6 @@
 		FA0506DA17094EED00B793CB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FA0506DC17094EED00B793CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FA0506DD17094EED00B793CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FA0506E017094EED00B793CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		FA0506E717094F3A00B793CB /* ViewController~iphone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~iphone4.xib"; sourceTree = "<group>"; };
 		FA0506EB17094FAD00B793CB /* KAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAViewController.h; sourceTree = "<group>"; };
 		FA0506EC17094FAD00B793CB /* KAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +68,8 @@
 				FA0506CA17094EED00B793CB /* KANibHelper */,
 				FA0506C317094EED00B793CB /* Frameworks */,
 				FA0506C217094EED00B793CB /* Products */,
+				825495AF174CC752001F6D8C /* KANibHelper copy-Info.plist */,
+				825495C4174CC764001F6D8C /* KANibHelper copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,10 +131,9 @@
 			children = (
 				FA0506DC17094EED00B793CB /* ViewController.h */,
 				FA0506DD17094EED00B793CB /* ViewController.m */,
-				FA0506DF17094EED00B793CB /* ViewController.xib */,
-				829B2421171D952E00153D14 /* ViewController~ipad.xib */,
-				FA0506E717094F3A00B793CB /* ViewController~iphone4.xib */,
-				82A31D9B171E8D3700518979 /* ViewController~iphone3_5_land.xib */,
+				82549596174CC658001F6D8C /* ViewController.xib */,
+				825495C5174CC7AB001F6D8C /* ViewController~ipad.xib */,
+				825495C7174CC844001F6D8C /* ViewController~iphone4.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +172,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FA0506B817094EED00B793CB;
 			productRefGroup = FA0506C217094EED00B793CB /* Products */;
@@ -191,10 +193,9 @@
 				FA0506D717094EED00B793CB /* Default.png in Resources */,
 				FA0506D917094EED00B793CB /* Default@2x.png in Resources */,
 				FA0506DB17094EED00B793CB /* Default-568h@2x.png in Resources */,
-				FA0506E117094EED00B793CB /* ViewController.xib in Resources */,
-				FA0506E817094F3A00B793CB /* ViewController~iphone4.xib in Resources */,
-				829B2422171D952E00153D14 /* ViewController~ipad.xib in Resources */,
-				82A31D9C171E8D3700518979 /* ViewController~iphone3_5_land.xib in Resources */,
+				82549597174CC658001F6D8C /* ViewController.xib in Resources */,
+				825495C6174CC7AB001F6D8C /* ViewController~ipad.xib in Resources */,
+				825495C8174CC844001F6D8C /* ViewController~iphone4.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +222,6 @@
 				FA0506CE17094EED00B793CB /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FA0506DF17094EED00B793CB /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA0506E017094EED00B793CB /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,7 +252,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -283,7 +276,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -296,8 +289,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KANibHelper/Demo/KANibHelper-Prefix.pch";
 				INFOPLIST_FILE = "KANibHelper/Demo/KANibHelper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -309,8 +303,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KANibHelper/Demo/KANibHelper-Prefix.pch";
 				INFOPLIST_FILE = "KANibHelper/Demo/KANibHelper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

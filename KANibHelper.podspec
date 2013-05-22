@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/kirualex/KANibHelper'
   s.author   = { 'Alexis Creuzot' => 'alexis.creuzot@gmail.com' }
   s.source   = { :git => 'https://github.com/kirualex/KANibHelper',
-                  :tag => '0.3'}
+                  :tag => '0.4'}
 
   s.description = 'KANibHelper by kirualex.'
 
