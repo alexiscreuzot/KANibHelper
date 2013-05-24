@@ -15,12 +15,10 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-#define DEGREES_TO_RADIANS(x) (M_PI * x / 180.0)
+
 #import "KAViewController.h"
 
-
 @implementation KAViewController{    
-    NSString *nibNameDefault;
     NSString *nibName4inches;
     NSString *nibName3_5inches;
     
@@ -48,7 +46,6 @@
     }
     
     // Names
-    nibNameDefault = nibName;
     nibName4inches =  [nibName stringByAppendingString:@"~iphone4"];
     nibName3_5inches =  [nibName stringByAppendingString:@"~iphone3_5"];
     
@@ -56,7 +53,7 @@
     path4inches = [[NSBundle mainBundle] pathForResource:nibName4inches ofType:@"nib"];
     path3_5inches = [[NSBundle mainBundle] pathForResource:nibName3_5inches ofType:@"nib"];
     
-    return [super initWithNibName:[self detectNibToUse:nibNameDefault] bundle:nibBundleOrNil];
+    return [super initWithNibName:[self detectNibToUse:nibName] bundle:nibBundleOrNil];
 }
 
 - (NSString*) detectNibToUse:(NSString*) nibName
