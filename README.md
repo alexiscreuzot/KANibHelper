@@ -4,14 +4,17 @@ Tired of autolayout and those damn constraints which lack simplicity and flexibi
 
 ##Install
 
+###Normal install
 Simply copy :
  * KAViewController.h
  * KAViewController.m
 
 into your project folder and import KAViewController.h
 
-or use [cocoapods](http://cocoapods.org) with this line :
-    pod 'KANibHelper'
+###Using [cocoapods](http://cocoapods.org)
+
+add this line to your Podfile :
+`pod 'KANibHelper'`
 
 ##Usage
 
