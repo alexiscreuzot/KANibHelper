@@ -1,4 +1,7 @@
-Discontinued project
+***
+Discontinued as of 23-06-2016
+***
+
 
 #KANibHelper
 
