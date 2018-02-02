@@ -1,13 +1,13 @@
 ***
-Discontinued as of 23-06-2016
+This library is deprecated
 ***
 
 
-#KANibHelper
+# KANibHelper
 
 Tired of autolayout and those damn constraints which lack simplicity and flexibility ? Well then this library is made for you. I believe having separate Nib files for 3.5 and 4 inches screens are the way to go if you want to ease up the layout management process and improve your app maintanability.
 
-##Install
+## Install
 
 ###Normal install
 Simply copy :
@@ -16,12 +16,12 @@ Simply copy :
 
 into your project folder and import KAViewController.h
 
-###Using [cocoapods](http://cocoapods.org)
+### Using [cocoapods](http://cocoapods.org)
 
 add this line to your Podfile :
 `pod 'KANibHelper'`
 
-##Usage
+## Usage
 
 Just subclass `KAViewController` instead of the usual `UIViewController` in your header file, and you are ready to go !
 
@@ -31,11 +31,11 @@ You can also add the suffix '~iphone3_5' to your original nib for consistenc, it
 
 Check out the demo if you want to see the details, and don't hesitate to fork me !
 
-###File hierarchy example
+### File hierarchy example
 
 ![Files](http://i.imgur.com/siMS57M.png)
 
-###Result
+### Result
 
 ![Result](http://i.imgur.com/imUMj0e.jpg)
 
