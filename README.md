@@ -1,5 +1,7 @@
 ***
-This library is deprecated
+
+<p align="middle">This library is deprecated</p>
+
 ***
 
 
